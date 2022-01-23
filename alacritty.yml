@@ -52,9 +52,13 @@ colors:
     cyan:    '0x99ffee'
     white:   '0xffffff'
 
-decorations: none
 
 window: 
+  # No title bar
+  # decorations: "transparent"
+  decorations: "buttonless"
+  padding:
+    y: 10
   opacity: 1.0
 
 font:
@@ -81,6 +85,8 @@ font:
     x: 0
     y: 0
   set_font_smoothing_style: true
+  # mkdir ./alacritty/.cargo && touch config.toml
+  # echo 'paths = [ "../crossfont", "../winit" ]' >> ./alacritty/.cargo/config.toml
   use_thin_strokes: true
 
 

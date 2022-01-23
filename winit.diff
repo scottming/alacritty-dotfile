@@ -1,0 +1,21 @@
+
+commit 43580969341fce3be1cc76ab3593f544cf370b8c (HEAD -> master, pm/master)
+Author: Ben Jackson <puremourning@gmail.com>
+Date:   Fri Jun 18 16:13:39 2021 +0100
+
+    Autohide dock and menu bar, rather than make it impossible to exit fullscreen
+
+diff --git a/src/platform_impl/macos/window_delegate.rs b/src/platform_impl/macos/window_delegate.rs
+index d77c8957..f657363c 100644
+--- a/src/platform_impl/macos/window_delegate.rs
++++ b/src/platform_impl/macos/window_delegate.rs
+@@ -496,8 +496,8 @@ extern "C" fn window_will_use_fullscreen_presentation_options(
+     // we don't, for consistency. If we do, it should be documented that the
+     // user-provided options are ignored in exclusive fullscreen.
+     (NSApplicationPresentationOptions::NSApplicationPresentationFullScreen
+-        | NSApplicationPresentationOptions::NSApplicationPresentationHideDock
+-        | NSApplicationPresentationOptions::NSApplicationPresentationHideMenuBar)
++        | NSApplicationPresentationOptions::NSApplicationPresentationAutoHideDock
++        | NSApplicationPresentationOptions::NSApplicationPresentationAutoHideMenuBar)
+         .bits()
+ }
