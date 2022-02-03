@@ -92,5 +92,10 @@ font:
 
 live_config_reload: true
 
+alt_send_esc: true
+
 key_bindings:
   - { key: N, mods: Command, action: CreateNewWindow }
+  - { key: Right, mods: Alt, chars: "\x1BF" }
+  - { key: Left,  mods: Alt, chars: "\x1BB" }
+
