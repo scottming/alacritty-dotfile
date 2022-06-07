@@ -84,7 +84,8 @@ font:
     x: 0
     y: 0
   set_font_smoothing_style: true
-  # mkdir ./alacritty/.cargo && touch config.toml
+  # mkdir -p ./alacritty/.cargo && touch ./alacritty/config.toml
+  # clone and patch two repositories
   # echo 'paths = [ "../crossfont", "../winit" ]' >> ./alacritty/.cargo/config.toml
   use_thin_strokes: true
 
