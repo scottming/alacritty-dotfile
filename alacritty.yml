@@ -1,56 +1,56 @@
-# Colors (Dracula PRO)
+# color dracula_pro_buffy
 colors:
-  # Default colors
   primary:
-    background: "0x22212c"
-    foreground: "0xf8f8f2"
-
-    # Bright and dim foreground colors
-    #
-    # The dimmed foreground color is calculated automatically if it is not present.
-    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-    # is `false`, the normal foreground color will be used.
-    #dim_foreground: '0x9a9a9a'
-    #bright_foreground: '0xffffff'
-
-  # Cursor colors
-  #
-  # Colors which should be used to draw the terminal cursor. If these are unset,
-  # the cursor color will be the inverse of the cell color.
+    background: "#2A212C"
+    foreground: "#F8F8F2"
+    bright_foreground: "#FFFFFF"
   cursor:
-    text: "0x454158"
-    cursor: "0xf8f8f2"
-
-  # Selection colors
-  #
-  # Colors which should be used to draw the selection area. If selection
-  # background is unset, selection color will be the inverse of the cell colors.
-  # If only text is unset the cell text color will remain the same.
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: "#544158"
+      background: "#8AFF80"
+    focused_match:
+      foreground: "#544158"
+      background: "#FFCA80"
+  footer_bar:
+    background: "#2A212C"
+    foreground: "#F8F8F2"
+  hints:
+    start:
+      foreground: "#2A212C"
+      background: "#FFFF80"
+    end:
+      foreground: "#FFFF80"
+      background: "#2A212C"
+  line_indicator:
+    foreground: None
+    background: None
   selection:
-    text: "0xf8f8f2"
-    background: "0x454158"
-
-  # Normal colors
+    text: CellForeground
+    background: "#544158"
   normal:
-    black: "0x22212c"
-    red: "0xff9580"
-    green: "0x8aff80"
-    yellow: "0xffff80"
-    blue: "0x9580ff"
-    magenta: "0xff80bf"
-    cyan: "0x80ffea"
-    white: "0xf8f8f2"
-
-  # Bright colors
+    black: "#9F70A9"
+    red: "#FF9580"
+    green: "#8AFF80"
+    yellow: "#FFFF80"
+    blue: "#9580FF"
+    magenta: "#FF80BF"
+    cyan: "#80FFEA"
+    white: "#F8F8F2"
   bright:
-    black: "0x22212c"
-    red: "0xffaa99"
-    green: "0xa2ff99"
-    yellow: "0xffff99"
-    blue: "0xaa99ff"
-    magenta: "0xff99cc"
-    cyan: "0x99ffee"
-    white: "0xffffff"
+    black: "#9F70A9"
+    red: "#FFAA99"
+    green: "#A2FF99"
+    yellow: "#FFFF99"
+    blue: "#AA99FF"
+    magenta: "#FF99CC"
+    cyan: "#99FFEE"
+    white: "#FFFFFF"
 
 window:
   # No title bar
@@ -83,7 +83,7 @@ font:
   glyph_offset:
     x: 0
     y: 0
-  set_font_smoothing_style: true
+  # set_font_smoothing_style: true
   # mkdir -p ./alacritty/.cargo && touch ./alacritty/config.toml
   # clone and patch two repositories
   # echo 'paths = [ "../crossfont", "../winit" ]' >> ./alacritty/.cargo/config.toml
