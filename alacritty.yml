@@ -61,21 +61,33 @@ window:
   opacity: 1.0
 
 font:
+  # normal:
+  #   family: "Hack Nerd Font Mono"
+  #   style: Regular
+  # bold:
+  #   family: "Hack Nerd Font Mono"
+  #   style: Bold
+  # italic:
+  #   family: "Hack Nerd Font Mono"
+  #   style: Italic
+  # bold_italic:
+  #   family: "Hack Nerd Font Mono"
+  #   style: Bold Italic
   normal:
-    family: "Hack Nerd Font Mono"
+    family: "MonoLisa Nerd Font"
     style: Regular
   bold:
-    family: "Hack Nerd Font Mono"
+    family: "MonoLisa Nerd Font"
     style: Bold
   italic:
-    family: "Hack Nerd Font Mono"
-    style: Italic
+    family: "MonoLisa Nerd Font"
+    style: Regular Italic
   bold_italic:
-    family: "Hack Nerd Font Mono"
+    family: "MonoLisa Nerd Font"
     style: Bold Italic
 
   # Point size
-  size: 13.0
+  size: 12.0
 
   offset:
     x: 0
