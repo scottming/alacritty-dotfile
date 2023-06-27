@@ -1,7 +1,7 @@
 # color dracula_pro_buffy
 colors:
   primary:
-    background: "#2A212C"
+    background: "#22212C"
     foreground: "#F8F8F2"
     bright_foreground: "#FFFFFF"
   cursor:
@@ -12,29 +12,29 @@ colors:
     cursor: CellForeground
   search:
     matches:
-      foreground: "#544158"
+      foreground: "#454158"
       background: "#8AFF80"
     focused_match:
-      foreground: "#544158"
+      foreground: "#454158"
       background: "#FFCA80"
   footer_bar:
-    background: "#2A212C"
+    background: "#22212C"
     foreground: "#F8F8F2"
   hints:
     start:
-      foreground: "#2A212C"
+      foreground: "#22212C"
       background: "#FFFF80"
     end:
       foreground: "#FFFF80"
-      background: "#2A212C"
+      background: "#22212C"
   line_indicator:
     foreground: None
     background: None
   selection:
     text: CellForeground
-    background: "#544158"
+    background: "#454158"
   normal:
-    black: "#9F70A9"
+    black: "#7970A9"
     red: "#FF9580"
     green: "#8AFF80"
     yellow: "#FFFF80"
@@ -43,7 +43,7 @@ colors:
     cyan: "#80FFEA"
     white: "#F8F8F2"
   bright:
-    black: "#9F70A9"
+    black: "#7970A9"
     red: "#FFAA99"
     green: "#A2FF99"
     yellow: "#FFFF99"
@@ -51,7 +51,6 @@ colors:
     magenta: "#FF99CC"
     cyan: "#99FFEE"
     white: "#FFFFFF"
-
 window:
   # No title bar
   # decorations: "transparent"
@@ -59,6 +58,7 @@ window:
   padding:
     y: 10
   opacity: 1.0
+  option_as_alt: Both
 
 font:
   # normal:
@@ -87,7 +87,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 12
 
   offset:
     x: 0
@@ -102,8 +102,6 @@ font:
   # use_thin_strokes: false
 
 live_config_reload: true
-
-alt_send_esc: true
 
 selection:
   save_to_clipboard: true
